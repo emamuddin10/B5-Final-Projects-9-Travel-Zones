@@ -1,39 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: "Mulish", sans-serif;
 }
-body{
+:root{
+    --color-primary: #ff5400;
+    --color-secondary:#fef5f5;
+}
+
+body {
     max-width: 1240px;
     margin: auto;
+}
+
+/* Shered Style//////////////////////////////////////////////////////////////////// */
+.btn-primary{
+    color: white;
+    background-color:#ff5400;
+    font-size: 16px;
+    font-weight: 700;
+    /* line-height: 20px; */
+    /* letter-spacing: 0%; */
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 30px;
+    margin: 30px 0px;
+    
+}
+.section-title{
+    color: black;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section-description{
+    font-size: 16px;
+    color: black;
+    max-width: 600px;
+    margin: auto;
+    font-weight: normal;
+    line-height: 26px;
+    padding-bottom: 30px ;
+    text-align: center;
 }
 
 
 
 /* nav part responsive////////////////////////////////////////////////// */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     /* background: red; */
     padding: 30px 0px;
 }
-.logo-container{
+.logo-text{
+    font-size: 30px;
+  font-weight:800;
+}
+.logo-span{
+    color: #ff5400;
+}
+
+.logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.menus{
+
+.menus {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.menus > ul {
+
+.menus>ul {
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
     gap: 50px;
     list-style: none;
 }
+
+/* .banner part  */
+
+.banner {
+    background-image: url("./Images/Group\ 13\ \(1\)\ \(1\).png"),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1));
+    background-blend-mode: overlay;
+    border-radius: 10px;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-title{
+    font-size: 64px;
+    color: white;
+}
+.banner-description{
+    font-size: 16px;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+    font-weight: normal;
+    line-height: 26px;
+    padding: 30px 0px;
+}
+
+.input-container{
+    display: flex;
+    gap: 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #fff;
+    max-width: fit-content;
+    text-align: center;
+}
+.input-container input{
+   padding: 20px;
+   border-radius: 10px;
+   border: none;
+}
+.banner-btn{
+    color: white;
+    background-color:#ff5400;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 0px 50px;
+} 
+.fa-solid{
+    margin-right: 10px;
+}
+
+/* section-1 popular section */
+
+.popular-section{
+    display: flex;
+    gap: 20px;
+    margin: 100px 0px 50px 0px;
+}
+.popular-title{
+  color: black;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.popular-description{
+    line-height: 30px;
+}
+.popular-ul{
+    margin: 30px 50px 30px 30px;
+}
+.popular-ul li{
+    line-height: 30px;
+}
+
+/* why choose us section */
+
+.choose-section{
+    margin: 100px 0px 50px 0px;
+}
+
+.box-container{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* text-align:center; */
+    justify-content: center;
+}
+
+.box{
+    max-width: 550px;
+    background-color: var(--color-secondary);
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.box-title{
+  font-size: 22px;
+  color: black;
+  margin: 15px 0px;
+}
+.box-description{
+
+}
+
