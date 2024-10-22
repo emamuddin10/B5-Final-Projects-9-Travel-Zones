@@ -1,14 +1,87 @@
-/* .hide{
+.hide{
     display: none;
-} */
+}
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 576px){
+    header{
+        margin: 0 30px;
+    }
     nav{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .menus {
-        flex-direction: column;
+        display: none;
         
     }
+    .ham-berger{
+        display: block;
+        font-size: 30px;
+    }
+
+    /* banner responsive */
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-description{
+        padding: 30px  ;
+    }
+    .input-container{
+      flex-direction: column;
+      /* width: 70%; */
+      margin: auto;
+      
+      
+    }
+    .input-container input,select,button{
+        padding: 0px 1rem;
+        height:50px;
+        width:100% ;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+     
+     }
+     .input-container input{
+        width: 85%;
+     }
+
+/* POPULAR RESPONSIVE */
+main{
+    margin: 0 30px;
+}
     
+.popular-section{
+    flex-direction: column;
+}
+.popular-section img{
+    height: 100%;
+    width: 100%;
+}
+
+/* DESTINATION RES  */
+
+.row-1,.row-2,.row-3{
+    grid-template-columns: 1fr;
+}
+
+/* NEWSLATTER RES */
+
+.newslatter-section{
+    flex-direction: column;
+}
+.newslatter-bg{
+    width: 100%;
+}
+.discount{
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+}
+
+
+footer{
+    padding: 30px;
+}
+
+
 }
