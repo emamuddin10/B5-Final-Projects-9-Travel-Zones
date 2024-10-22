@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Zones</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/9668e05192.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +20,7 @@
             </div>
             <div class="menus">
                 <ul>
-                    <li>Home</li>
+                    <li style="color: var(--color-primary);">Home</li>
                     <li>Packages</li>
                     <li>Testimonial</li>
                     <li>Blog</li>
@@ -35,8 +36,17 @@
                     quis sapien urna eu phasellus.</p>
                 <div class="input-container">
                     <input type="text" name="" id="" placeholder="Where go">
-                    <input type="text" name="" id="" placeholder="When">
-                    <input type="text" name="" id="" placeholder="Select Type">
+                    <select name="" id="">
+                        <option value="">When</option>
+                        <option value="">9am</option>
+                        <option value="">6am</option>
+                    </select>
+                    <select name="" id="" placeholder="Select Type">
+                        <option value="">Select Type</option> 
+                        <option value="">Visit</option>
+                        <option value="">Sponsor</option>
+                    </select>
+                   
                     <button class="banner-btn"><i class="fa-solid fa-magnifying-glass fa-lg"
                             style="color: #ffffff;"></i> Find Now</button>
 
@@ -45,7 +55,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="hide">
         <!-- POPULAR SECTION -->
         <section class="popular-section">
             <div class="popular-content">
@@ -75,7 +85,40 @@
             <h2 class="section-title">Choose Your Destination</h2>
             <p class="section-description"> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit
                 massa. Sodales dictumst nec nibh pellentesque </p>
-
+            <div class="row-1">
+                <div class="country-card">
+                    <img src="./Images/Rectangle 5.png" alt="">
+                    <p class="country">Maldives</p>
+                </div>
+                <div class="country-card">
+                    <img src="./Images/Rectangle 8.png " alt="">
+                    <p class="country">Indonesia</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="country-card">
+                    <img src="./Images/Rectangle 5.png" alt="">
+                    <p class="country">Maldives</p>
+                </div>
+                <div class="country-card">
+                    <img src="./Images/Rectangle 8.png " alt="">
+                    <p class="country">Indonesia</p>
+                </div>
+                <div class="country-card">
+                    <img src="./Images/Rectangle 8.png " alt="">
+                    <p class="country">Indonesia</p>
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="country-card">
+                    <img src="./Images/Rectangle 5.png" alt="">
+                    <p class="country">Maldives</p>
+                </div>
+                <div class="country-card">
+                    <img src="./Images/Rectangle 8.png " alt="">
+                    <p class="country">Indonesia</p>
+                </div>
+            </div>
         </section>
         <!-- WHY CHOOSE US SECTION -->
         <section class="choose-section">
@@ -130,7 +173,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="hide">
         <div class="logo-container">
             <img src="./Images/Group 40071 (2).png" alt="">
             <h1 class="logo-text">Travel <span class="logo-span">Zones</span></h1>
